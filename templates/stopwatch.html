@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../index.js" rel="javascript"></script>
+    <title>Clock</title>
+  </head>
+  <body class="mode">
+    <div>
+      <a class="mode" href="index.html">Clock</a>
+      <a class="mode" href="stopwatch.html">Stopwatch</a>
+      <a class="mode" href="timer.html">Timer</a>
+    </div>
+    <h1>Stopwatch</h1>
+    <div>
+      <div class="timer">
+        <div class="timer">
+          <input
+            type="number"
+            onKeyDown="return false"
+            id="min"
+            min="0"
+            max="0"
+            class="input-timer mode"
+            value="0"
+          />
+          <h1>:</h1>
+          <input
+            type="number"
+            id="sec"
+            min="0"
+            max="0"
+            onKeyDown="return false"
+            class="input-timer mode"
+            value="0"
+          />
+        </div>
+      </div>
+      <div>
+        <button
+          id="timeControl"
+          class="timer-button"
+          onclick="setTimer()"
+          value="stopwatch"
+        >
+          Start
+        </button>
+        <button id="cancel" class="timer-button">Cancel</button>
+      </div>
+    </div>
+    <div>
+      <input id="mode" onclick="changeMode()" type="checkbox" />
+    </div>
+  </body>
+</html>

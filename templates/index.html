@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../index.js" rel="javascript"></script>
+    <title>Clock</title>
+  </head>
+  <body class="mode">
+    <div>
+      <a class="mode" href="index.html">Clock</a>
+      <a class="mode" href="stopwatch.html">Stopwatch</a>
+      <a class="mode" href="timer.html">Timer</a>
+    </div>
+    <h1>Clock</h1>
+    <div>
+      <h1 id="clockTime" class="clock"></h1>
+      <span>
+        <h4>hh</h4>
+        <h4>mm</h4>
+        <h4>ss</h4>
+      </span>
+    </div>
+    <div>
+      <input type="checkbox" />
+    </div>
+    <script>
+      window.onload = setClock;
+    </script>
+  </body>
+</html>
